@@ -1,15 +1,20 @@
 #include <stdio.h>
-
+// zum Compilieren: gcc add.c -o add
 int main(void){
-    int x,y;//declaration variables
-    int sum;//declaration variables
-    x=1234;//innitialization variables
-    y=5678;//innitialization variables
-    // %d:placeholder for integer values coming from variables
-    printf("Der Wert von x:%d\n",x);
-    printf("Der Wert von y:%d\n",y);
+    int x,y;
+    int sum;
+    int rem;//reminder
+    float div;
+    printf("Geben Sie erste ganze Zahlen ein: ");
+    scanf("%d", &x);
+    printf("Geben Sie zweite ganze Zahlen ein: ");
+    scanf("%d", &y);
     sum =x+y;
+    div = (float)x/(float)y;
+    rem = x%y;
     printf("Die Summe von x+y:%d\n",sum);
-    printf("Ich bin Horny und finde die Fuesse von Marlene geil\n");
+    printf("Die Summe von x/y:%.2f\n",div);
+    printf("Die Summe von x/y:%d\n",x/y);
+    printf("Der Rest von x%%y:%d\n",rem);
     return 0;
 }
